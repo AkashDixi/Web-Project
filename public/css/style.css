@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Ubuntu:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-bg :a1e272e;
+    --main-color:0097e6;
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    margin: 0;
+}
+.main_menu{
+    background-color: var(--main-bg);
+}
+.navbar{
+    color: #fff;
+    background-color: rgb(85, 42, 110);
+    padding: 2rem;
+    width:100% ;
+    margin: 0;
+}
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.navbar-toggler{
+    background-color: rgba(103, 117, 116, 0.616);
+}
+.navbar li {
+    margin-left: 2rem;
+}
+.navbar a:hover{
+    color: blue;
+}
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+}
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* main header */
+.main_header_left{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.main_header_right{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.main_header_left p{
+    font-size: 2rem;
+}
+.main_header_left h2{
+    font-size: 3rem;
+    margin: 1 rem 0 4rem 0;
+    text-transform: capitalize;
+}
+span{
+    color: blue;
+}
+.main_header_left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    text-transform:uppercase ;
+    box-shadow: 0 8px 6px -6px;
+}
+
+.main_header_right figure img{
+    filter: drop-shadow(0  0 0.5rem 1rem );
+
+}
+/* WEAther PAGE */
+.temp_form{
+    width:60%;
+    position: relative;
+    margin: 5rem auto;
+
+}
+.temp_form input[type ="text"]{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background-color: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+}
+.temp_form input[type ="submit"]{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border: none;
+    background: blue;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1.6rem;
+}
+
+
+
+
+
+.tempinfo{
+    width: 40em;
+    margin: auto;
+    min-height: 20rem;
+    border-radius: 1rem;
+   
+    background-color:  #1e202b;
+    font-family: 'Alkatra', cursive;
+    
+}
+.top_layer{
+    width: 100%;
+    height: 20%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+.top_layer p{
+    color: #fff;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.main_layer #city_name{
+    padding: 2rem 0;
+    color: #fff;
+    font-weight: 300;
+    font-size: 2rem;
+
+}
+.main_layer .middle_layer{
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+
+}
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa{
+    font-size: 7rem;
+    font-weight: 900;
+    
+}
+.data_hide{
+    
+    transition: all 0.3s linear;
+}
+/* footer */
+footer{
+    width: 100%;
+    background-color: rgb(85, 42, 110);
+    margin-top: auto;
+
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 5rem;
+    font-size: 1.4rem;
+    margin-top: auto;
+}
+@media(max-width:768px){
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .main_header_right{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .temp_form{
+        width: auto;
+    }
+    .tempinfo{
+        width: auto;
+    }
+    
+}
