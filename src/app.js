@@ -28,7 +28,7 @@ app.get("/weather",(req,res)=>{
 })
 app.get("*",(req,res)=>{ 
     res.render("404error",{
-        err: "Oops eror occoured"
+        err: "Oops eror occoured rerr !!"
     })
 })
 
